@@ -40,7 +40,7 @@ const [moo, neigh, baa, oink, cluck] = farmAnimals.split(" ");
 debugger;
 const [bessie, dolly, babe, little] = farmAnimals.split(" ").filter(removeHorse);
 debugger;
-const [blackAndWhite, black, pink] = farmAnimals.split(" ").filter(removeHorse).splice(0, 3);
+const [blackAndWhite, black, pink] = farmAnimals.split(" ").filter(removeHorse).slice(0, 4);
 debugger;
 const [red, orange, yellow, green, blue, indigo, violet] = colors;
 debugger;
