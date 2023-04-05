@@ -24,6 +24,34 @@ const nestedMuppet = {
   nestedJob: 'Host of The Muppet Show',
   nestedPartner: 'Miss Piggy'
 };
+const removeHorse = function (animalToCheck) {
+  //const checker = animalToCheck != "horse";
+  debugger;
+  return (animalToCheck != "horse");
+}
+
+const removeIndigo = function (colorToCheck) {
+  //const checker = colorToCheck != "horse";
+  debugger;
+  return (colorToCheck != "indigo");
+}
+
+const [moo, neigh, baa, oink, cluck] = farmAnimals.split(" ");
+debugger;
+const [bessie, dolly, babe, little] = farmAnimals.split(" ").filter(removeHorse);
+debugger;
+const [blackAndWhite, black, pink] = farmAnimals.split(" ").filter(removeHorse).splice(0, 3);
+debugger;
+const [red, orange, yellow, green, blue, indigo, violet] = colors;
+debugger;
+const [r, o, y, g, b, v] = colors.filter(removeIndigo);
+debugger;
+const [indg] = colors.slice(5, 6);
+debugger;
+const {muppetName, color, song, job, partner} = muppet;
+const {song2, song4} = nestedMuppet.album.theMuppetMovie;
+const {nestedJob, nestedPartner} = nestedMuppet;
+
 
 // Strings
 
